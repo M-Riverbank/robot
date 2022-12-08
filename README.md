@@ -44,7 +44,27 @@
 
 
 
+## 每日人品
 
+### 搬运自[nonebot2商店插件](https://github.com/SkyDynamic/nonebot_plugin_jrrp)
+
+查询今日人品
+
+#### 用法
+
+|  功能  |         用法          | 权限 | 需要@ | 是否阻断 | 优先级 |
+| :----: | :-------------------: | :--: | :---: | :------: | ------ |
+| 查人品 | j/jrrp+任意字符或不加 | any  |  否   |   True   | 100    |
+
+#### env配置项:
+
+无
+
+#### 其他
+
+- 只能在群聊中使用
+
+![1670494130286](readme/1670494130286.png)
 
 
 
@@ -53,6 +73,75 @@
 ## 今日运势
 
 ### 搬运自[nonebot2商店插件](https://github.com/MinatoAquaCrews/nonebot_plugin_fortune)
+
+1. 随机抽取今日运势，配置多种抽签主题：原神、PCR、Hololive、东方、东方归言录、明日方舟、赛马娘、阴阳师、碧蓝航线、碧蓝幻想、战双帕弥什，galgame主题等……
+2. 可指定主题抽签；
+3. 每群每人一天限抽签1次，0点刷新（贪心的人是不会有好运的🤗）抽签信息并清除`./resource/out`下生成的图片；
+
+#### 用法
+
+1. 一般抽签：今日运势、抽签、运势；
+
+2. 指定主题抽签：[xx抽签]，例如：pcr抽签、holo抽签、碧蓝抽签；
+
+3. 指定签底并抽签：指定[xxx]签，在`./resource/fortune_setting.json`内手动配置；
+
+	⚠️ 将在`v0.5.x`弃用
+
+4. [配置抽签主题：
+
+	- 设置[原神/pcr/东方/vtb/xxx]签：设置群抽签主题；
+	- 重置（抽签）主题：设置群抽签主题为随机；
+
+5. 抽签设置：查看当前群抽签主题的配置；
+
+6. 刷新抽签：全局即刻刷新抽签，防止过0点未刷新；
+
+7. 今日运势帮助：显示插件帮助文案；
+
+8. 查看（抽签）主题：显示当前已启用主题；
+
+#### env配置项:
+
+使用[FloatTech-zbpdata/Fortune](https://github.com/FloatTech/zbpdata)全部主题。在`env`下设置`xxx_FLAG`以启用或关闭抽签随机主题（默认全部开启,不用配置），例如： 
+
+```
+ARKNIGHTS_FLAG=true         # 明日方舟
+ASOUL_FLAG=false            # A-SOUL
+AZURE_FLAG=true             # 碧蓝航线
+GENSHIN_FLAG=true           # 原神
+ONMYOJI_FLAG=false          # 阴阳师
+PCR_FLAG=true               # 公主连结
+TOUHOU_FLAG=true            # 东方
+TOUHOU_LOSTWORD_FLAG=true   # 东方归言录
+TOUHOU_OLD_FLAG=false       # 东方旧版
+HOLOLIVE_FLAG=true          # Hololive
+PUNISHING_FLAG=true         # 战双帕弥什
+GRANBLUE_FANTASY_FLAG=true  # 碧蓝幻想
+PRETTY_DERBY_FLAG=true      # 赛马娘
+DC4_FLAG=false              # dc4
+EINSTEIN_FLAG=true          # 爱因斯坦携爱敬上
+SWEET_ILLUSION_FLAG=true    # 灵感满溢的甜蜜创想
+LIQINGGE_FLAG=true          # 李清歌
+HOSHIZORA_FLAG=true         # 星空列车与白的旅行
+SAKURA_FLAG=true            # 樱色之云绯色之恋
+SUMMER_POCKETS_FLAG=true    # 夏日口袋
+AMAZING_GRACE_FLAG=true     # 奇异恩典·圣夜的小镇
+```
+
+**请确保不全为false，否则会抛出错误**
+
+#### 其他
+
+- 所有功能均不用@
+
+- 所有功能阻断
+
+- 刷新抽签优先级为7,其余为8
+
+- 设置与重置群主题需要SUPERUSER/管理员/群主权限，刷新抽签需要SUPERUSER权限,其余为权限any
+
+	![1670480909823](readme/1670479877121.png)
 
 
 
@@ -137,7 +226,7 @@
 
 
 
-## 鲁迅说
+## 鲁迅说过
 
 ### 搬运自[TakkerBot](https://github.com/FYWinds/takker)
 
