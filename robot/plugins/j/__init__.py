@@ -4,7 +4,7 @@ from nonebot.params import CommandArg
 from typing import List
 import time
 
-jrrp = on_command("jrrp", aliases={"j"}, permission=GROUP, priority=100, block=True)
+jrrp = on_command("jrrp", aliases={"j"}, permission=GROUP, priority=97, block=True)
 message: List[dict] = [
     {
         "expr": "jrrp == 100",

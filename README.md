@@ -54,7 +54,7 @@
 
 |  功能  |         用法          | 权限 | 需要@ | 是否阻断 | 优先级 |
 | :----: | :-------------------: | :--: | :---: | :------: | ------ |
-| 查人品 | j/jrrp+任意字符或不加 | any  |  否   |   True   | 100    |
+| 查人品 | j/jrrp+任意字符或不加 | any  |  否   |   True   | 97     |
 
 #### env配置项:
 
@@ -194,7 +194,7 @@ AMAZING_GRACE_FLAG=true     # 奇异恩典·圣夜的小镇
 
 ### 搬运自[nonebot2商店插件](https://github.com/AquamarineCyan/nonebot-plugin-today-in-history)
 
-图片形式显示服务器运行状态与资源占用
+
 
 #### 用法
 
