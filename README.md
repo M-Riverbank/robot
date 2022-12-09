@@ -194,7 +194,7 @@ AMAZING_GRACE_FLAG=true     # 奇异恩典·圣夜的小镇
 
 ### 搬运自[nonebot2商店插件](https://github.com/AquamarineCyan/nonebot-plugin-today-in-history)
 
-
+康康历史上的今天发生过什么
 
 #### 用法
 
@@ -221,6 +221,29 @@ AMAZING_GRACE_FLAG=true     # 奇异恩典·圣夜的小镇
 - 定时任务好像有问题无法触发，原因不明
 
 	![1670480944997](readme/1670480944997.png)
+
+
+
+
+
+## 疯狂星期四
+
+### 搬运自[nonebot2商店插件](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday)
+
+#### 用法
+
+1. 天天疯狂，疯狂星期[一|二|三|四|五|六|日|天]，输入**疯狂星期八**等不合法时间将提示；
+2. 支持日文触发：狂乱[月|火|水|木|金|土|日]曜日；
+
+#### env配置项
+
+无
+
+#### 其他
+
+- 无需@,权限any
+
+	![1670570552670](readme/1670570552670.png)
 
 
 
