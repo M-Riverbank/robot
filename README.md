@@ -225,6 +225,10 @@ AMAZING_GRACE_FLAG=true     # 奇异恩典·圣夜的小镇
 
 - 戳一戳自动回复被移除,由[智能(障)回复插件](https://github.com/Special-Week/nonebot_plugin_smart_reply)处理
 
+- 所有事件优先级为50且阻断
+
+	![1670645428620](readme/1670645428620.png)
+
 
 
 
