@@ -4,7 +4,7 @@
             "gid": "758361031",
             "uid": "3388047303",
             "nickname": "一位不愿透露姓名的肥宅",
-            "is_divined": true
+            "is_divined": false
         }
     },
     "668063972": {
@@ -12,31 +12,37 @@
             "gid": "668063972",
             "uid": "2783738497",
             "nickname": "VME50",
-            "is_divined": true
+            "is_divined": false
         },
         "562564029": {
             "gid": "668063972",
             "uid": "562564029",
             "nickname": "追想的绝望",
-            "is_divined": true
+            "is_divined": false
         },
         "2674137421": {
             "gid": "668063972",
             "uid": "2674137421",
             "nickname": "㳯",
-            "is_divined": true
+            "is_divined": false
         },
         "3400913055": {
             "gid": "668063972",
             "uid": "3400913055",
             "nickname": "波登可",
-            "is_divined": true
+            "is_divined": false
         },
         "1801330304": {
             "gid": "668063972",
             "uid": "1801330304",
             "nickname": "只会划水の无言",
-            "is_divined": true
+            "is_divined": false
+        },
+        "2195403561": {
+            "gid": "668063972",
+            "uid": "2195403561",
+            "nickname": "无线电幽灵",
+            "is_divined": false
         }
     }
 }

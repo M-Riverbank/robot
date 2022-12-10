@@ -67,6 +67,14 @@ poke__reply = [
     "再戳一下试试？",
     "正在关闭对您的所有服务...关闭成功",
     "啊呜，太舒服刚刚竟然睡着了。什么事？",
+    f"再戳！{Bot_NICKNAME}可要咬你了嗷~",
+    "想好了再戳，(*-`ω´-)✄",
+    "喂，110吗，有人老戳我",
+    f"别戳了，{Bot_NICKNAME}怕疼QwQ",
+    f"呜呜，再戳{Bot_NICKNAME}脸都要肿了",
+    f"再戳{Bot_NICKNAME}，我要叫主人了",
+    f"唔... 有什么事吗?",
+    f"不要这样子啦(*/ω＼*)",
 ]
 
 
@@ -84,8 +92,12 @@ async def qinyun_reply(url):
     async with AsyncClient() as client:
         response = await client.get(url)
         # 这个api好像问道主人或者他叫什么名字会返回私活,这里replace掉部分
-        res = response.json()["content"].replace("林欣", Bot_MASTER).replace("{br}", "\n").replace("贾彦娟", Bot_MASTER).replace("周超辉", Bot_MASTER).replace(
-            "鑫总", Bot_MASTER).replace("张鑫", Bot_MASTER).replace("菲菲", Bot_NICKNAME).replace("dn", Bot_MASTER).replace("1938877131", "2749903559").replace("小燕", Bot_NICKNAME)
+        res = response.json()["content"].replace("林欣", Bot_MASTER).replace("{br}", "\n").replace("贾彦娟",
+                                                                                                   Bot_MASTER).replace(
+            "周超辉", Bot_MASTER).replace(
+            "鑫总", Bot_MASTER).replace("张鑫", Bot_MASTER).replace("菲菲", Bot_NICKNAME).replace("dn",
+                                                                                                  Bot_MASTER).replace(
+            "1938877131", "2749903559").replace("小燕", Bot_NICKNAME)
         res = re.sub(u"\\{.*?\\}", "", res)
         # 检查广告, 这个api广告太多了
         if have_url(res):

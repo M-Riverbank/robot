@@ -190,6 +190,45 @@ AMAZING_GRACE_FLAG=true     # 奇异恩典·圣夜的小镇
 
 
 
+## 检测群事件
+
+### 搬运自[nonebot2商店插件](https://github.com/cjladmin/nonebot_plugin_monitor)
+
+- 监测群组的以下变动事件： 
+	- 群成员增加、减少时，自动发送通知
+	- 群管理变更时，自动发送通知
+	- 群成员上传文件时，自动发送通知
+	- 群红包被抢完时，自动发送红包运气王
+	- 群成员荣誉变更时，发送变更通知(测试时没反应QwQ)
+
+#### 用法
+
+均为被动功能
+
+#### env配置项:
+
+> 1.把下载后的文件夹`nonebot_plugin_monitoring`放在`src/plugins/`目录下
+>
+> 2.修改`admin.py`
+>
+> > bot_qq：改为机器人的QQ号 super_qq：添加或新增管理员的QQ号
+>
+> 3.修改`chuoyichuo.py`
+>
+> > bot_name：设置机器人的昵称
+>
+> 4.修改`rongyu.py`
+>
+> > bot_qq：改为机器人的QQ号 super_qq：添加或新增管理员的QQ号
+
+#### 其他
+
+- 戳一戳自动回复被移除,由[智能(障)回复插件](https://github.com/Special-Week/nonebot_plugin_smart_reply)处理
+
+
+
+
+
 ## 历史上的今天
 
 ### 搬运自[nonebot2商店插件](https://github.com/AquamarineCyan/nonebot-plugin-today-in-history)
